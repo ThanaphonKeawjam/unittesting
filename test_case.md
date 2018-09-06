@@ -1,4 +1,4 @@
-| ***test case*** | ***test*** |
+| ***test case*** | ***return*** |
 |-----------------|------------|
 | empty list      | return 0   |
 | one item        | return 1   |
