@@ -1,9 +1,21 @@
-| ***test case*** | ***return*** |
+# Problem 1
+
+| ***Test Case*** | ***Except Result*** |
 |-----------------|------------|
 | empty list      | return 0   |
 | one item        | return 1   |
-| test two items many order ["a", "a", "b", "a", "b", "b"] | return 2 |
+| two items many order | return 2 |
 | add null to list | return 1 |
 | list is null | throw NullPointerException |
-| huge list [5, 6, 50, 60, 70, 90, 5, 100, 500, 1000, 0, 967, 90, 60, 2130, 888, 888, 888, 888, 888, 888, 907, 567, 111111] | return 16 |
-| multiple type [2, 45, "a", "a", "b", "45"] | return 5 |
+| huge of list | n that distinct |
+| multiple type of value | n that distinct each type |
+
+# Problem 2
+
+| ***Test Case*** | ***Except Result*** |
+|-----------------|---------------------|
+| basic binary search | index of target |
+| array one size | return 0 |
+| target not in array | return -1 |
+| target is null | throw IllegalArgumentException |
+| duplicates value | index of middle element that use to compare |
