@@ -24,9 +24,7 @@ public class ListUtil {
     	if(list == null) throw new NullPointerException();
     	
     	for(Object x : list) {
-    		if(!result.contains(x)) {
-    			result.add(x);
-    		}
+    		if(!result.contains(x)) result.add(x);
     	}
     	
     	count = result.size();
@@ -57,13 +55,9 @@ public class ListUtil {
     	
     	while(start <= last) {
     		mid = (start + last) / 2;
-    		if(array[mid].compareTo(element) < 0) {
-    			start = mid + 1;
-    		}else if(array[mid].compareTo(element) > 0) {
-    			last = mid - 1;
-    		}else {
-    			return mid;
-    		}
+    		if(array[mid].compareTo(element) < 0) start = mid + 1;
+    		else if(array[mid].compareTo(element) > 0) last = mid - 1;
+    		else return mid;
     	}
     	
     	return -1;

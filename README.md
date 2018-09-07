@@ -12,4 +12,4 @@
 > If they are not equal, this half will eliminated and search continues on the another half until they find index of the matching element and return it.
 > If the value to find is null, throw an exception.
 
-Wirte JUnit test for test two problem above.
+Write JUnit test for test two problems above.
