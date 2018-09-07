@@ -49,18 +49,18 @@ public class ListUtil {
     public static <T extends Comparable<? super T>> int binarySearch(T[] array, T element) {
     	if(element == null) throw new IllegalArgumentException("Search element must not be null");
     	
-    	int start = array.length - 1;
-    	int last = 0;
+    	int start = 0;
+    	int last = array.length - 1;
     	int mid = 0;
     	
     	Arrays.sort(array);
     	
-    	while(last <= start) {
+    	while(start <= last) {
     		mid = (start + last) / 2;
     		if(array[mid].compareTo(element) < 0) {
-    			last = mid + 1;
+    			start = mid + 1;
     		}else if(array[mid].compareTo(element) > 0) {
-    			start = mid - 1;
+    			last = mid - 1;
     		}else {
     			return mid;
     		}
